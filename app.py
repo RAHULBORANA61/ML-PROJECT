@@ -13,8 +13,8 @@ X = dataset.iloc[:, 0:3].values
 from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
 X = sc.fit_transform(X)
-def predict_note_authentication(Glucose,BloodPressure,Age):
-  output= model.predict(sc.transform([[Glucose,BloodPressure,Age]]))
+def predict_note_authentication(Glucose,BloodPressure):
+  output= model.predict(sc.transform([[Glucose,BloodPressure]]))
   print("Diabetic", output)
   if output==[1]:
     prediction="Person is Diabetic"
