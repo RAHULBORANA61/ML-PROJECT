@@ -6,9 +6,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 st.set_option('deprecation.showfileUploaderEncoding', False)
 # Load the pickled model
-pickle_in = open("/content/drive/My Drive/ML LAB/rb.pkl","rb")
+pickle_in = open("rb.pkl","rb")
 model=pickle.load(pickle_in)
-dataset= pd.read_csv('/content/drive/My Drive/ML LAB/diabetes2.csv')
+dataset= pd.read_csv('diabetes2.csv')
 X = dataset.iloc[:, 0:3].values
 from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
