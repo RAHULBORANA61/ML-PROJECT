@@ -42,7 +42,7 @@ def main():
   
     resul=""
     if st.button("Predict"):
-      result=predict_note_authentication(Glucose,BloodPressure,Age)
+      result=predict_note_authentication(Glucose,BloodPressure)
       st.success('Model has predicted {}'.format(result))
 
 if __name__=='__main__':
