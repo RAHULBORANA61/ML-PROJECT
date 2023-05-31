@@ -39,7 +39,7 @@ def main():
     Glucose = st.number_input(" ")
     BloodPressure = st.text_input("")
 
-    Age = st.number_input(" ")
+    Age =st.text_input("")
     resul=""
     if st.button("Predict"):
       result=predict_note_authentication(Glucose,BloodPressure,Age)
