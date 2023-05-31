@@ -37,7 +37,7 @@ def main():
     st.markdown(html_temp,unsafe_allow_html=True)
     st.header("Diabet Prediction")
     Glucose = st.number_input(" ")
-    BloodPressure = st.number_input(" ")
+   
     Age = st.number_input(" ")
     resul=""
     if st.button("Predict"):
